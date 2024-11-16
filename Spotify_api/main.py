@@ -7,7 +7,7 @@ from auth import Auth
 base_url = 'https://api.spotify.com/v1/'
 
 auth = Auth()
-#auth.generate_token()    # use it only for the first time
+auth.generate_token()    # use it only for the first time
 token = auth.get_token()
 
 headers = {
